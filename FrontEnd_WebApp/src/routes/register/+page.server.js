@@ -17,7 +17,7 @@ export const actions = {
             password: data.get('password')
         };
 
-        const body = await api.post('users/register', { user });
+        const body = await api.post('users/register', user);
 
         if (body.errors) {
             return fail(401, body);
