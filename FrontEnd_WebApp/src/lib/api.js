@@ -1,4 +1,4 @@
-import { error } from '@sveltejs/kit';
+import {error, redirect} from '@sveltejs/kit';
 
 const base = 'http://localhost:3000';
 
@@ -19,6 +19,15 @@ async function send({ method, path, data, token }) {
         const text = await res.text();
         return text ? JSON.parse(text) : {};
     }
+    if(res.status === 401){
+        throw redirect(302, `/login`);
+    }
+    if(res.status === 403){
+        throw redirect(302, `/login`);
+    }
+    if(res.status === 400){
+        throw redirect(302, `/login`);
+    }
 
     throw error(res.status);
 }
@@ -32,7 +41,6 @@ export function del(path, token) {
 }
 
 export function post(path, data, token) {
-    console.log(data)
     return send({ method: 'POST', path, data, token });
 }
 

@@ -36,6 +36,6 @@
         </fieldset>
         <button type="submit"q>Sign up</button>
     </form>
-<a>Already have an account ?</a>
+<a href="/register">Need an account ?</a>
 </div>
 </body>
