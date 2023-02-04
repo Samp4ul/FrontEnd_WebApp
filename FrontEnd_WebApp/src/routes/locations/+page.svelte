@@ -168,6 +168,12 @@
             opacity: 0.20;
         }
 
+        h1{
+            text-align: center;
+            font-size: 40px;
+            margin-top: -20px;
+        }
+
     </style>
 
 </svelte:head>
