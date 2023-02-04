@@ -35,10 +35,11 @@
         .menu {
             font-family: sans-serif;
             background-color: #F6F6F6;
-            width: 68%;
+            width: 60%;
             height: 50px;
             position: absolute;
             left: 50%;
+            top : 25%;
             transform: translate(-50%, -50%);
         }
 
@@ -139,6 +140,34 @@
         ul.gradient-list > li + li {
             margin-top: 2rem;}
 
+
+        .element{
+            position: relative;
+        }
+
+        .element-title-front{
+            font-size: 18px;
+            margin-top: -44px;
+            margin-bottom: 10px;
+            display: block;
+            text-align: center;
+        }
+
+        .element-title-behind{
+            display: block;
+            font-size: 16px;
+            margin-top: 20px;
+            color: #000; /* Fallback for older browsers */
+            color: rgba(0, 0, 0, 0);
+
+            text-align: center;
+        }
+
+        .element-span{
+            background-color: #d3ec74;
+            opacity: 0.20;
+        }
+
     </style>
 
 </svelte:head>
@@ -179,7 +208,7 @@
 
 <a href="/logout" class="button1">Log Out</a>
 
-<div class="menu">
+
 <h1>Locations</h1>
 {#if role=='admin'}
     <button class="button2" on:click={() => {showAdd = !showAdd}}>Add a Location</button>
@@ -230,8 +259,10 @@
 <ul class="gradient-list">
     {#each elements as element}
 
-        <li>
-            <p on:click={() => {element.showDetails = !element.showDetails}}>{element._id} - {element.filmName}</p>
+        <li class="element">
+            <p class="element-title-behind"><span class="element-span" on:click={() => {element.showDetails = !element.showDetails}}>{element._id} - {element.filmName}</span></p>
+
+            <p class="element-title-front" on:click={() => {element.showDetails = !element.showDetails}}>{element._id} - {element.filmName}</p>
 
             {#if element.showDetails}
                 {#if role=='admin'}
@@ -279,18 +310,18 @@
                 </form>
                 {/if}
                 {#if role!='admin'}
-                <p>_id: {element._id}</p>
-                <p>Film Type: {element.filmType}</p>
-                <p>Film Producer Name: {element.filmProducerName}</p>
-                <p>End Date: {element.endDate}</p>
-                <p>Film Name: {element.filmName}</p>
-                <p>District: {element.district}</p>
-                <p>Source Location ID: {element.sourceLocationId}</p>
-                <p>Film Director Name: {element.filmDirectorName}</p>
-                <p>Address: {element.address}</p>
-                <p>Start Date: {element.startDate}</p>
-                <p>Year: {element.year}</p>
-                <p>__v: {element.__v}</p>
+                <p><strong>_id: </strong>{element._id}</p>
+                <p><strong>Film Type: </strong>{element.filmType}</p>
+                <p><strong>Film Producer Name:</strong> {element.filmProducerName}</p>
+                <p><strong>End Date: </strong>{element.endDate}</p>
+                <p><strong>Film Name:</strong> {element.filmName}</p>
+                <p><strong>District:</strong> {element.district}</p>
+                <p><strong>Source Location ID:</strong> {element.sourceLocationId}</p>
+                <p><strong>Film Director Name: </strong>{element.filmDirectorName}</p>
+                <p><strong>Address: </strong>{element.address}</p>
+                <p><strong>Start Date:</strong> {element.startDate}</p>
+                <p><strong>Year: </strong>{element.year}</p>
+                <p><strong>__v:</strong> {element.__v}</p>
                     {/if}
             {/if}
         </li>
@@ -298,5 +329,5 @@
     {/each}
 </ul>
 </div>
-</div>
+
 </body>
