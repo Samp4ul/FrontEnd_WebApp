@@ -2,9 +2,12 @@ import { fail, redirect } from '@sveltejs/kit';
 import * as api from '$lib/api.js';
 
 /** @type {import('./$types').PageServerLoad} */
-export async function load({ parent }) {
+export async function load({ parent,url }) {
     const { user } = await parent();
-    if (user) throw redirect(307, '/');
+    let para = url.searchParams.get('valid')
+
+    return {para}
+
 }
 
 /** @type {import('./$types').Actions} */
@@ -24,8 +27,7 @@ export const actions = {
         }
 
         const value = btoa(JSON.stringify(body.user));
-        cookies.set('jwt', value, { path: '/' });
 
-        throw redirect(307, '/');
+        throw redirect(307, '/register?valid=true');
     }
 };

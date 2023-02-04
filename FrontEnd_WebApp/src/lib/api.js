@@ -1,6 +1,6 @@
 import {error, redirect} from '@sveltejs/kit';
 
-const base = 'http://localhost:3000';
+export const base = 'http://localhost:3000';
 
 async function send({ method, path, data, token }) {
     const opts = { method, headers: {} };
@@ -20,6 +20,9 @@ async function send({ method, path, data, token }) {
         return text ? JSON.parse(text) : {};
     }
     if(res.status === 401){
+        if(method==='POST'){
+            throw redirect(302, `/login?error=true`);
+        }
         throw redirect(302, `/login`);
     }
     if(res.status === 403){
@@ -28,6 +31,7 @@ async function send({ method, path, data, token }) {
     if(res.status === 400){
         throw redirect(302, `/login`);
     }
+
 
     throw error(res.status);
 }
