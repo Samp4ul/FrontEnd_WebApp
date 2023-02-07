@@ -21,12 +21,14 @@ export const actions = {
             password: data.get('password')
         };
 
+
         const body = await api.post('users/login', user);
 
         if (body.errors) {
             return fail(401, body);
         }
-        const value = body.token;
+        const value = body.jwt;
+
         cookies.set('jwt', value, { path: '/' });
 
         throw redirect(307, '/locations');

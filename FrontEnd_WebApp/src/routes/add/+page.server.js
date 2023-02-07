@@ -2,12 +2,16 @@
 import {base} from '$lib/api.js';
 import { redirect, fail } from '@sveltejs/kit';
 import * as api from '$lib/api.js';
+import {data} from "../locations/+page.svelte";
 
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ locals,request,response }) {
     let token = locals.jwt
-    //const body = await api.get('/locations', token);
+    let role = JSON.parse(atob(token.split('.')[1])).role;
+    if(role!='admin'){
+        throw redirect(307, '/login');
+    }
     let body = await api.get('locations', token);
     return {body,token,base}
 };
@@ -37,11 +41,11 @@ export const actions = {
 
         };
 
-        const body = await api.patch('locations/'+user._id, user,locals.jwt);
+        const body = await api.post('locations/', user,locals.jwt);
 
         if (body.errors) {
             return fail(401, body);
-        }
+        }   
 
 
     }

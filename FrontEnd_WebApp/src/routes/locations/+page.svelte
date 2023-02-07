@@ -189,20 +189,19 @@
     let elements = data.body
     import * as api from '$lib/api.js';
 
-    let role = JSON.parse(atob(data.token.split('.')[1])).role;
+    let request;
+    let locals;
+
+    let role = JSON.parse(atob(data.jwt.split('.')[1])).role;
 
     async function deleteLocation(id) {
         let token = data.token
         //const body = await api.get('/locations', token);
         await api.del('locations/'+id, token);
         location.reload()
+        console.log("Hey")
     };
 
-    function refreshWithDelay() {
-        setTimeout(function(){
-            window.location.replace(window.location.href);
-        }, 1000);
-    }
 
     let showAdd = false;
 
@@ -216,6 +215,7 @@
 
 
 <h1>Locations</h1>
+<!--
 {#if role=='admin'}
     <button class="button2" on:click={() => {showAdd = !showAdd}}>Add a Location</button>
     {#if showAdd}
@@ -260,7 +260,7 @@
         </form>
 
         {/if}
-    {/if}
+    {/if} -->
 <div class="menu">
 <ul class="gradient-list">
     {#each elements as element}
@@ -311,9 +311,10 @@
                     <label><br>__v :
                         <input type="text" placeholder="__v" value={element.__v} name="__v" readonly/></label>
                     <button type="submit">Save Edit</button>
-                    <button on:click={deleteLocation(element._id)}>Delete</button>
+
 
                 </form>
+                    <button on:click={deleteLocation(element._id)}>Delete</button>
                 {/if}
                 {#if role!='admin'}
                 <p><strong>_id: </strong>{element._id}</p>
