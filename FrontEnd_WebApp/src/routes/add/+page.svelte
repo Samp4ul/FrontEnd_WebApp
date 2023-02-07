@@ -23,7 +23,7 @@
 <h2>Add a Location</h2>
     <form use:enhance method="POST">
 
-        <label>_id : <input type="text" placeholder="_id" name="_id" readonly/></label>
+        <label>_id : <input type="text" placeholder="_id" name="_id" required/></label>
 
 
         <label><br>Film Type : <input type="text" placeholder="Film Type" name="filmType" required /></label>
@@ -56,8 +56,12 @@
             <input type="text" placeholder="Year" name="year" required /></label>
 
         <label><br>__v :
-            <input type="text" placeholder="__v" name="__v" readonly/></label>
+            <input type="text" placeholder="__v" name="__v" required/></label>
         <button type="submit">Add</button>
     </form>
+{#if data.para}
+    <p>Locations Added</p>
+{/if}
 <button onclick="window.location.href='/locations'">Return to Main</button>
+
 </body>

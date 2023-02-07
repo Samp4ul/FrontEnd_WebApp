@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
 
     <style>
+
         .location{
             background-color: #F6F6F6;
         }
@@ -43,7 +44,7 @@
             transform: translate(-50%, -50%);
         }
 
-        @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+
         /*** FONTS ***/
         /*** VARIABLES ***/
         /* Colors */
@@ -174,6 +175,30 @@
             margin-top: -20px;
         }
 
+        a.button2{
+            display:inline-block;
+            padding:0.35em 1.2em;
+            border:0.1em solid #BAE1FC;
+            margin:0 0.3em 0.3em 0;
+            border-radius:0.12em;
+            box-sizing: border-box;
+            text-decoration:none;
+            font-family:'Roboto',sans-serif;
+            font-weight:300;
+            color:#000000;
+            text-align:center;
+            transition: all 0.2s;
+        }
+        a.button2:hover{
+            color:#000000;
+            background-color:#E2F2FD ;
+        }
+        @media all and (max-width:30em){
+            a.button2{
+                display:block;
+                margin:0.4em auto;
+            }
+        }
     </style>
 
 </svelte:head>
@@ -214,53 +239,13 @@
 <a href="/logout" class="button1">Log Out</a>
 
 
+
 <h1>Locations</h1>
-<!--
+
 {#if role=='admin'}
-    <button class="button2" on:click={() => {showAdd = !showAdd}}>Add a Location</button>
-    {#if showAdd}
+<a href="/add" class="button2">Add Location</a>
+    {/if}
 
-        <form use:enhance method="POST">
-
-            <label>_id : <input type="text" placeholder="_id" name="_id" readonly/></label>
-
-
-            <label><br>Film Type : <input type="text" placeholder="Film Type" name="filmType" required /></label>
-
-            <label><br>Film Producer Name :
-                <input type="text" placeholder="Film Producer Name" name="filmProducerName" required /></label>
-
-            <label><br>End Date :
-                <input type="text" placeholder="End Date" name="endDate" required /></label>
-
-            <label><br>Film Name :
-                <input type="text" placeholder="Film Name" name="filmName" required  /></label>
-
-            <label><br>District : <input type="text" placeholder="District" name="district" required />
-            </label>
-
-            <label><br>Source Location ID :
-                <input type="text" placeholder="Source Location ID" name="sourceLocationId" required /></label>
-
-            <label><br>Film Director Name :
-                <input type="text" placeholder="Film Director Name" name="filmDirectorName" required /></label>
-
-            <label><br>Adress :
-                <input type="text" placeholder="Address" name="address" required /></label>
-
-            <label><br>Start Date :
-                <input type="text" placeholder="Start Date"name="startDate" required /></label>
-
-            <label><br>Year :
-                <input type="text" placeholder="Year" name="year" required /></label>
-
-            <label><br>__v :
-                <input type="text" placeholder="__v" name="__v" readonly/></label>
-            <button type="submit">Add</button>
-        </form>
-
-        {/if}
-    {/if} -->
 <div class="menu">
 <ul class="gradient-list">
     {#each elements as element}

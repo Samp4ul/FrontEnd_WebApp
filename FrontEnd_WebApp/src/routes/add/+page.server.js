@@ -6,14 +6,18 @@ import {data} from "../locations/+page.svelte";
 
 
 /** @type {import('./$types').PageServerLoad} */
-export async function load({ locals,request,response }) {
+export async function load({ locals,url }) {
     let token = locals.jwt
-    let role = JSON.parse(atob(token.split('.')[1])).role;
-    if(role!='admin'){
+    if(token==null)
+    {
         throw redirect(307, '/login');
     }
-    let body = await api.get('locations', token);
-    return {body,token,base}
+    let role = JSON.parse(atob(token.split('.')[1])).role;
+    if(role!='admin'){
+        throw redirect(307, '/locations');
+    }
+    let para = url.searchParams.get('success')
+    return {para}
 };
 
 /** @type {import('./$types').Actions} */
@@ -45,7 +49,8 @@ export const actions = {
 
         if (body.errors) {
             return fail(401, body);
-        }   
+        }
+        throw redirect(307, '/add?success=true');
 
 
     }
