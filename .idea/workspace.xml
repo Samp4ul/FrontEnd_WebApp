@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb8a3500-a591-4381-b554-54fc12093c4d" name="Changes" comment="FINI V2">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="login" />
+        <option value="+page" />
+        <option value="+layout.svelte" />
+        <option value="+layout.server.js" />
+        <option value="+page.svelte" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2KXHEbfnZhqYZ3XXcSXhV1bNjRz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ellioth/Documents/Web Application/FrontEnd_WebApp&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/ellioth/Documents/Web Application/FrontEnd_WebApp/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/ellioth/Documents/Web Application/FrontEnd_WebApp/FrontEnd_WebApp/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FrontEnd_WebApp/src/routes/add" />
+      <recent name="$PROJECT_DIR$/FrontEnd_WebApp/src/routes/edit" />
+      <recent name="$PROJECT_DIR$/FrontEnd_WebApp" />
+      <recent name="$PROJECT_DIR$/FrontEnd_WebApp/src/routes/login" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/FrontEnd_WebApp/src/routes/locations" />
+      <recent name="$PROJECT_DIR$/FrontEnd_WebApp/src/routes" />
+      <recent name="$PROJECT_DIR$/FrontEnd_WebApp/src/routes/login" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="+page.server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FrontEnd_WebApp/src/routes/login/+page.server.js" working-dir="$PROJECT_DIR$/FrontEnd_WebApp/src/routes/login">
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/FrontEnd_WebApp/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.+page.server.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb8a3500-a591-4381-b554-54fc12093c4d" name="Changes" comment="" />
+      <created>1674113896787</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674113896787</updated>
+      <workItem from="1674113898206" duration="3178000" />
+      <workItem from="1674410792045" duration="140000" />
+      <workItem from="1674743981841" duration="277000" />
+      <workItem from="1674749412588" duration="74000" />
+      <workItem from="1674750934901" duration="590000" />
+      <workItem from="1674751531740" duration="12063000" />
+      <workItem from="1674781160951" duration="1283000" />
+      <workItem from="1674823954369" duration="5000" />
+      <workItem from="1674825712830" duration="209000" />
+      <workItem from="1674835735603" duration="6700000" />
+      <workItem from="1675084778843" duration="598000" />
+      <workItem from="1675120679830" duration="56000" />
+      <workItem from="1675193180825" duration="10510000" />
+      <workItem from="1675255435437" duration="905000" />
+      <workItem from="1675265164051" duration="6881000" />
+      <workItem from="1675441063375" duration="15012000" />
+      <workItem from="1675469573832" duration="2513000" />
+      <workItem from="1675472111067" duration="11895000" />
+      <workItem from="1675597663154" duration="617000" />
+      <workItem from="1675694450814" duration="7012000" />
+      <workItem from="1675775121270" duration="964000" />
+      <workItem from="1675797953125" duration="5324000" />
+      <workItem from="1675804134817" duration="147000" />
+      <workItem from="1675804297559" duration="4000" />
+      <workItem from="1675804331752" duration="66000" />
+      <workItem from="1676129159747" duration="80000" />
+      <workItem from="1676138548244" duration="599000" />
+      <workItem from="1676478045144" duration="4000" />
+      <workItem from="1676651145634" duration="177000" />
+      <workItem from="1676741461667" duration="156000" />
+      <workItem from="1676741626363" duration="204000" />
+      <workItem from="1676742143932" duration="344000" />
+      <workItem from="1676742611999" duration="26000" />
+    </task>
+    <task id="LOCAL-00001" summary="Register Page Created (not functionnal)">
+      <created>1674756030582</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674756030582</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Register Page Created (functionnal)">
+      <created>1674756413230</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674756413231</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Register Page + Login Page + Access Locations">
+      <created>1674781369263</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674781369263</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Login + Register (+css) + Location (delete/list/edit)">
+      <created>1675522964249</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675522964249</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Login + Register (+css) + Location (delete/list/edit) (+css)">
+      <created>1675526371431</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675526371431</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Login + Register (+css) + Location (delete/list/edit) (+css)">
+      <created>1675526760749</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675526760749</updated>
+    </task>
+    <task id="LOCAL-00007" summary="delete fonctionnel">
+      <created>1675799822752</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675799822752</updated>
+    </task>
+    <task id="LOCAL-00008" summary="FINI">
+      <created>1675803021671</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675803021671</updated>
+    </task>
+    <task id="LOCAL-00009" summary="FINI V2">
+      <created>1675804230610</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675804230610</updated>
+    </task>
+    <task id="LOCAL-00010" summary="FINI V2">
+      <created>1675804354828</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675804354828</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Register Page Created (not functionnal)" />
+    <MESSAGE value="Register Page Created (functionnal)" />
+    <MESSAGE value="Register Page + Login Page + Access Locations" />
+    <MESSAGE value="Login + Register (+css) + Location (delete/list/edit)" />
+    <MESSAGE value="Login + Register (+css) + Location (delete/list/edit) (+css)" />
+    <MESSAGE value="delete fonctionnel" />
+    <MESSAGE value="FINI" />
+    <MESSAGE value="FINI V2" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINI V2" />
+  </component>
+</project>
