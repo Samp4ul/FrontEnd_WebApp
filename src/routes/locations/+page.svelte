@@ -241,7 +241,7 @@
 
 
 <h1>Locations</h1>
-<h5>online</h5>
+<h3>online</h3>
 
 {#if role=='admin'}
 <a href="/add" class="button2">Add Location</a>
